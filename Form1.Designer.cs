@@ -29,6 +29,7 @@ namespace Semana_4_proyecto_de_un_formulario
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.label16 = new System.Windows.Forms.Label();
             this.label15 = new System.Windows.Forms.Label();
@@ -46,6 +47,7 @@ namespace Semana_4_proyecto_de_un_formulario
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.tableLayoutPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -263,7 +265,6 @@ namespace Semana_4_proyecto_de_un_formulario
             this.label2.TabIndex = 1;
             this.label2.Text = "c";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.label2.Click += new System.EventHandler(this.Form1_Load);
             // 
             // label1
             // 
@@ -276,6 +277,11 @@ namespace Semana_4_proyecto_de_un_formulario
             this.label1.Text = "c";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.label1.Click += new System.EventHandler(this.Form1_Load);
+            // 
+            // timer1
+            // 
+            this.timer1.Interval = 750;
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
             // Form1
             // 
@@ -310,6 +316,7 @@ namespace Semana_4_proyecto_de_un_formulario
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Timer timer1;
     }
 }
 
