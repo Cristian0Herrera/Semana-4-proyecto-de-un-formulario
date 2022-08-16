@@ -50,8 +50,25 @@ namespace Semana_4_proyecto_de_un_formulario
             AssignIconsToSquares();
         }
 
+        /// <summary>
+        /// Every label's Click event is handled by this event handler
+        /// </summary>
+        /// <param name="sender">The label that was clicked</param>
+        /// <param name="e"></param>
         private void Form1_Load(object sender, EventArgs e)
         {
+            Label clickedLabel = sender as Label;
+
+            if (clickedLabel != null)
+            {
+                // If the clicked label is black, the player clicked
+                // an icon that's already been revealed --
+                // ignore the click
+                if (clickedLabel.ForeColor == Color.Black)
+                    return;
+
+                clickedLabel.ForeColor = Color.Black;
+            }
 
         }
     }
