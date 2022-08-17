@@ -265,6 +265,7 @@ namespace Semana_4_proyecto_de_un_formulario
             this.label2.TabIndex = 1;
             this.label2.Text = "c";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label2.Click += new System.EventHandler(this.Form1_Load);
             // 
             // label1
             // 
